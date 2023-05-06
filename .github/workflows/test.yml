@@ -17,3 +17,15 @@ jobs:
     uses: ./.github/workflows/template-test.yml
     with:
       step: ${{ inputs.step }}
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - shell: bash
+        run: echo hi > test.yml
+  world:
+    runs-on: ubuntu-latest
+    needs: hello
+    steps:
+      - shell: bash
+        run: cat test.yml
+

@@ -2,12 +2,8 @@ name: Reusable workflow example
 
 on:
   workflow_call:
-    inputs:
-        step:
-          required: true
-          type: string
 jobs:
   triage:
     runs-on: ubuntu-latest
     steps:
-    - uses: ./.github/actions/${{ inputs.step }}.yml
+    - uses: ./.github/actions/default.yml

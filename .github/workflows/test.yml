@@ -16,4 +16,4 @@ jobs:
   poke:
     uses: ./.github/workflows/template-test.yml
     with:
-      step: ${{ input.step }}
+      step: ${{ inputs.step }}

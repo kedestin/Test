@@ -6,17 +6,11 @@ name: CI
 on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-    inputs:
-      step:
-        required: true
-        type: string
-
+  
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   poke:
     uses: ./.github/workflows/template-test.yml
-    with:
-      step: ${{ inputs.step }}
   hello:
     runs-on: ubuntu-latest
     steps:

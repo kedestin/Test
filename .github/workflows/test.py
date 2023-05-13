@@ -1,21 +1,8 @@
 import os
 
 
+def foo(a, b, c, d, e):
+    pass
 
 
-
-def foo(
-    a,
-    b,
-    c, d,
-    e
-): pass
-
-
-
-
-
-
-
-
-print('hello world')
+print("hello world")

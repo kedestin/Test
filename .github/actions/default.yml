@@ -1,8 +1,0 @@
-name: "Publish to Docker"
-description: "Pushes built artifacts to Docker"
-
-runs:
-  using: "composite"
-  steps:
-    - shell: bash
-      run: echo Default
